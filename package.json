@@ -1,0 +1,47 @@
+{
+  "name": "inquirer-prompt-suggest",
+  "version": "0.0.0",
+  "description": "Inquirer.js prompt for your less creative users",
+  "main": "lib/index.js",
+  "repository": "https://github.com/olistic/inquirer-prompt-suggest.git",
+  "author": "Matias Olivera <moliverafreire@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "inquirer",
+    "inquirer-prompt",
+    "suggest",
+    "cli",
+    "command",
+    "menu",
+    "prompt",
+    "tty"
+  ],
+  "scripts": {
+    "lint": "eslint --cache examples lib",
+    "lint:fix": "yarn lint --fix",
+    "precommit": "lint-staged"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "inquirer": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.2",
+    "prettier": "1.12.1"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
