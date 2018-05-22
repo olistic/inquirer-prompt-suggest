@@ -1,6 +1,6 @@
 {
   "name": "inquirer-prompt-suggest",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Inquirer.js prompt for your less creative users",
   "main": "lib/index.js",
   "repository": "https://github.com/olistic/inquirer-prompt-suggest.git",
